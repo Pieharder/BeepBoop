@@ -1,7 +1,3 @@
-
-
-
-
 $(document).ready(function() {
   $("form#inputForm").submit(function(event) {
     event.preventDefault();
@@ -12,7 +8,7 @@ $(document).ready(function() {
     for (var index = 0; index <= adjustedInput.length; index += 1) {
       $("#result").prepend("<ul>" + "</ul>").append("<li>" + adjustedInput + "</li>");
     };
-
+    
     // Refuse non number inputs
     if (isNaN(inputNumber)) {
       alert("Please enter a number")
@@ -20,7 +16,9 @@ $(document).ready(function() {
     } else
       $("#result").show();
     
-
+    $("#formReset").click(function () {
+      $("#result").hide();
+    });
   });
 });
     
