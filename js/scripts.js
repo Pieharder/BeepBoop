@@ -1,18 +1,4 @@
-function numbersToList(numberList) {
 
-  for (var index = 0; index <= numberList.length; index += 1) {
-    if (index.includes("3")) {
-      numberList[index] = "I'm sorry, Dave. I'm afraid I can't do that.";
-    } else if (index.includes("2")) {
-      numberList[index] = "Boop!";
-    } else if (index.includes("1")) {
-      numberList[index] = "Beep!";
-    } else 
-      numberList += index
-  }
-  return numberList.push();
-
-}
 
 
 
@@ -21,20 +7,32 @@ $(document).ready(function() {
     event.preventDefault();
 // Gather user input
     var inputNumber = $("input#numberInput").val();
-    var numberList = [];
+
+  });
+});
     
-    for (var index = 0; index <= inputNumber; index += 1) {
-      numberList.push(index);
-      console.log(numberList)
-    };
 
 
-
-
-
+function numbersToList(inputNumber) {
+  var finalList
+  for (var index = 0; index <= inputNumber; index += 1) {
+    if(containsNumber(index, "3")) {
+      numberList += "I'm sorry, Dave. I'm afraid I can't do that.";
+    } else if(containsNumber(index, "2")) {
+      numberList += "Boop!";
+    } else if(containsNumber(index, "1")) {
+      numberList += "Beep!";
+    } else {
+      numberList += index;
+    }
+    if(i !== input) {
+      numList += ",";
+  }
+}
     
-    for (var currentNumber = 0; currentNumber < numberList.length; currentNumber += 1) {
-      $("#result").prepend("<ul>" + "</ul>").append("<li>" + currentNumber + "</li>");
+
+    for (var index = 0; index < newList.length; index += 1) {
+      $("#result").prepend("<ul>" + "</ul>").append("<li>" + index + "</li>");
     };
     console.log(numberList)
 
@@ -49,6 +47,4 @@ $(document).ready(function() {
       $("#result").hide();
     } else
       $("#result").show();
-    
-  });
-});
+    }
