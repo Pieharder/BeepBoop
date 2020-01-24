@@ -45,4 +45,4 @@ _This project is was built with the purpose of accepting user inputs in the form
 
 *This software is licensed under the MIT license*
 
-Copyright (c) 2020 **_Geoff Goetz & Zakk Short_**
+Copyright (c) 2020 **_Geoff Goetz_**
