@@ -13,6 +13,9 @@ $(document).ready(function() {
     if (isNaN(inputNumber)) {
       alert("Please enter a number")
       $("#result").hide();
+    } else if (inputNumber > 9000) {
+      $("#result").hide();
+      $("#vegeta").show();
     } else
       $("#result").show();
     

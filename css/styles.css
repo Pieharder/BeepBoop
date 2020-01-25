@@ -4,8 +4,10 @@ background-color: aliceblue;
 
 
 
-
+#vegeta {
+  display: none;
+}
 
 #result {
-  display: none
+  display: none;
 }
